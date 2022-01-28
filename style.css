@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Epilogue', sans-serif;
+}
+
+.page {
+    background-color: #acdbf7;
+    min-height: 100vh;
+}
+
+h1 {
+    display: block;
+    color: #35A4E3;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 40px;
+}
+
+h3 {color: #fff; text-align: center; font-size: 20px; text-transform: uppercase; padding: 20px 0; }
+
+.input {
+    text-align: center;
+}
+
+input[type="text"] {
+    min-width: 50%;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+
+input[type="text"]:placeholder-shown {
+    font-family: 'Epilogue', sans-serif;
+}
+
+.gpsButton {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    transform: translateX(-37px);;
+}
+
+#btnSearch {
+    height: auto;
+    width: auto;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    font-family: 'Epilogue', sans-serif;
+}
+
+#btnSearch:hover {
+    transform: scale(1.05);
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#city-info {
+    background-color: rgb(232, 229, 229);
+    height: auto;
+    width: auto;
+    min-width: 70%;
+    max-width: 90%;
+    padding: 30px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-weight: 500;
+    padding: 10px;
+}
+
+.city {
+    color: black;
+    font-weight: 900;
+    padding-bottom: 30px;
+}
+
+.airQuality {
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.healthImplications,
+.cautionaryStatement {
+    padding: 18px;
+    text-align: start;
+    font-size:15px;
+}
