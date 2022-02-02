@@ -5,7 +5,7 @@
 }
 
 body {font-family: 'Epilogue', sans-serif;}
-.page-container {background-color: #acdbf7; min-height: 100vh;}
+.page-container {background-color: #17305C; min-height: 100vh;}
 
 h1 {display: block; color: #35A4E3; font-weight: 700; text-align: center;padding-top: 40px;}
 h2 {font-weight: 500; padding: 10px;}
@@ -21,7 +21,9 @@ input[type="text"] {
     border-radius: 10px;
     border: none;
     outline: none;
-    padding: 10px;
+    padding: 15px;
+    box-shadow: 5px 5px 5px rgba(7, 46, 68, 0.5);
+    background-color: #E0E7F4;
 }
 
 input[type="text"]:placeholder-shown {font-family: 'Epilogue', sans-serif;}
@@ -32,9 +34,14 @@ input[type="text"]:placeholder-shown {font-family: 'Epilogue', sans-serif;}
     border-radius: 10px;
     border: none;
     outline: none;
-    padding: 10px 30px;
+    padding: 15px 40px;
     font-family: 'Epilogue', sans-serif;
     margin-left: 20px;
+    background: -moz-linear-gradient(top, #E37335 0%, #FCBE4C 100%);
+    background: -webkit-linear-gradient(top, #E37335 0%, #FCBE4C 100%);
+    background: linear-gradient(to bottom, #E37335 0%, #FCBE4C 100%);
+    color: #fff;
+    letter-spacing: 1px;
 }
 
 #btnSearch:hover {transform: scale(1.05);}
@@ -47,12 +54,13 @@ input[type="text"]:placeholder-shown {font-family: 'Epilogue', sans-serif;}
 }
 
 .city {
-    background-color: rgb(232, 229, 229);
+    background-color: #E0E7F4;
+    box-shadow: 5px 5px 5px rgba(7, 46, 68, 0.5);
     height: auto;
     width: auto;
     min-width: 70%;
     max-width: 90%;
-    padding: 30px;
+    padding: 20px;
     border: none;
     border-radius: 10px;
     text-align: center;
@@ -63,18 +71,30 @@ input[type="text"]:placeholder-shown {font-family: 'Epilogue', sans-serif;}
 
 
 .city_name {
-    color: black;
+    font-size: 30px;
+    color: #E37335;
     font-weight: 900;
-    padding-bottom: 30px;
+    margin: 20px;
 }
 
-.city_score {
-    border-radius: 10px;
-    padding: 20px;
-}
+.city_score {margin: 10px;font-weight: 400; font-size: 20px;}
+.city_description {padding: 18px; text-align: start; font-size:15px; line-height: 1.5;}
 
-.city_description {
-    padding: 18px;
-    text-align: start;
-    font-size:15px;
+.category {display: flex; justify-content: center; text-align: left;}
+#category-list, #score-bar {padding: 18px; margin-right: 30px;}
+#category-list li {line-height: 2;}
+#score-bar li { width: 200px; text-align: center;line-height: 2; font-weight: bold; border-radius: 20px;}
+
+
+
+@media (max-width: 768px) {
+    .page-container{padding: 20px;}
+
+    input[type="text"] {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .city_description {padding: 10px;}
+    #category-list {width: 80%; margin: 0; padding: 10px;} #score-bar {width: 20%; margin: 0; padding: 10px;}
+    #score-bar li {width: 100%;}
 }
