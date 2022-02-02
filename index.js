@@ -4,9 +4,11 @@ let cityName = document.getElementsByClassName("city_name")[0];
 let cityScore = document.getElementsByClassName("city_score")[0];
 let cityDescription = document.getElementsByClassName("city_description")[0];
 
+
 async function checkQuality() {
     let search = cityInput.value;
     let citySearch = search.toLowerCase().replace(" ", "-");
+    let cityBox = document.getElementsByClassName('city')[0];
 
     await fetch(`https://api.teleport.org/api/urban_areas/slug:${citySearch}/`)
         .then(function (response) {
@@ -14,6 +16,7 @@ async function checkQuality() {
         })
 
         .then(function (result) {
+            cityBox.style.display = 'flex';
             cityName.innerHTML = result.full_name;
         })
 

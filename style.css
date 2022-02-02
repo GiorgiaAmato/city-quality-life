@@ -66,6 +66,7 @@ input[type="text"]:placeholder-shown {font-family: 'Epilogue', sans-serif;}
     margin: 30px 0;
     display: flex;
     flex-direction: column;
+    display: none;
 }
 
 
