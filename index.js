@@ -3,6 +3,8 @@ let btnSearch = document.getElementById('btnSearch');
 let cityName = document.getElementsByClassName("city_name")[0];
 let cityScore = document.getElementsByClassName("city_score")[0];
 let cityDescription = document.getElementsByClassName("city_description")[0];
+let categoryList = document.getElementById('category-list');
+let scoreBar = document.getElementById('score-bar');
 
 
 async function checkQuality() {
@@ -53,16 +55,14 @@ async function checkQuality() {
             
             }
         })
-        .then (search = 'cancellato')
-
         .catch(
             function (response) {
                 if (response.status = "error") {
                     cityName.innerHTML = "Error"
                     cityScore.innerHTML = "Urban area not found";
                     cityDescription.innerHTML = " ";
-                    document.getElementById('category-list').style.display = "none";
-                    document.getElementById('score-bar').style.display = "none";
+                    categoryList.innerHTML = " ";
+                    scoreBar.innerHTML = " ";
                 }
             }
         )

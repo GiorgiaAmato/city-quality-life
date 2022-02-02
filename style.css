@@ -11,7 +11,7 @@ h1 {display: block; color: #35A4E3; font-weight: 700; text-align: center;padding
 h2 {font-weight: 500; padding: 10px;}
 h3 {color: #fff; text-align: center; font-size: 20px; text-transform: uppercase; padding: 20px 0; }
 li {list-style-type: none;}
-.input {display: flex; width: 70%; text-align: center;}
+.input {display: flex; width: 90%; text-align: center;}
 
 .container {
     display: flex;
@@ -64,7 +64,6 @@ input[type="text"]:placeholder-shown {font-family: 'Epilogue', sans-serif;}
     border-radius: 10px;
     text-align: center;
     margin: 30px 0;
-    display: flex;
     flex-direction: column;
     display: none;
 }
