@@ -50,8 +50,6 @@ input[type="text"]:placeholder-shown {font-family: 'Epilogue', sans-serif;}
 
 #btnSearch:hover {transform: scale(1.05);}
 
-
-
 .city {
     background-color: #E0E7F4;
     box-shadow: 5px 5px 5px rgba(7, 46, 68, 0.5);
@@ -84,14 +82,12 @@ input[type="text"]:placeholder-shown {font-family: 'Epilogue', sans-serif;}
 #category-list li {line-height: 2;}
 #score-bar li { width: 200px; text-align: center;line-height: 2; font-weight: bold; border-radius: 20px;}
 
-
-
 @media (max-width: 768px) {
     .page-container{padding: 20px;}
     .input {display: block;}
     input[type="text"] {width: 100%; margin-bottom: 20px; }
     .city_description {padding: 10px;}
-    #btnSearch{margin: 0; width: 100%;margin-bottom: 50px;}
+    #btnSearch{margin: 0; width: 50%;margin-bottom: 50px;}
     #category-list {width: 80%; margin: 0; padding: 10px;} #score-bar {width: 20%; margin: 0; padding: 10px;}
     #score-bar li {width: 100%;}
 }
