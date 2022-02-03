@@ -5,13 +5,13 @@ let cityScore = document.getElementsByClassName("city_score")[0];
 let cityDescription = document.getElementsByClassName("city_description")[0];
 let categoryList = document.getElementById('category-list');
 let scoreBar = document.getElementById('score-bar');
+let cityBox = document.getElementsByClassName('city')[0];
 
 
 async function checkQuality() {
     let search = cityInput.value;
     let citySearch = search.toLowerCase().replace(" ", "-");
-    let cityBox = document.getElementsByClassName('city')[0];
-
+    
     await fetch(`https://api.teleport.org/api/urban_areas/slug:${citySearch}/`)
         .then(function (response) {
             return response.json(); 
@@ -52,13 +52,12 @@ async function checkQuality() {
                 newScoreBar.appendChild(addCatScoreBar);
                 let positionScoreBar = document.getElementById('score-bar');
                 positionScoreBar.appendChild(newScoreBar).style.background = color;  
-            
             }
         })
         .catch(
             function (response) {
                 if (response.status = "error") {
-                    cityName.innerHTML = "Error"
+                    cityName.innerHTML = "Error";
                     cityScore.innerHTML = "Urban area not found";
                     cityDescription.innerHTML = " ";
                     categoryList.innerHTML = " ";
@@ -72,12 +71,23 @@ async function checkQuality() {
 btnSearch.onclick = checkQuality;
 
 
-// Tasto invio
+// Enter
 document.addEventListener('keydown', function (event) {
     if (event.code == 'Enter') {
         document.getElementById("btnSearch").blur();
         checkQuality();
     }
 });
+
+//reset fields
+function resetFields (){
+    cityName.innerHTML = " ";
+    cityScore.innerHTML = " ";
+    cityDescription.innerHTML = " ";
+    categoryList.innerHTML = " ";
+    scoreBar.innerHTML = " ";
+    cityBox.style.display = 'none';
+}
+cityInput.addEventListener('click', resetFields);
 
 
