@@ -66,6 +66,7 @@ async function checkQuality() {
             }
         )
     cityInput.value = '';
+    cityInput.blur();
 };
 
 btnSearch.onclick = checkQuality;
