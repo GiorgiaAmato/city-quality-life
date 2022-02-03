@@ -87,7 +87,7 @@ input[type="text"]:placeholder-shown {font-family: 'Epilogue', sans-serif;}
     .input {display: block;}
     input[type="text"] {width: 100%; margin-bottom: 20px; }
     .city_description {padding: 10px;}
-    #btnSearch{margin: 0; padding: 15px 20px; width: 20%; margin-bottom: 50px;}
+    #btnSearch{margin: 0; padding: 15px 20px; width: auto; margin-bottom: 50px;}
     #category-list {width: 80%; margin: 0; padding: 10px;} #score-bar {width: 20%; margin: 0; padding: 10px;}
     #score-bar li {width: 100%;}
 }
