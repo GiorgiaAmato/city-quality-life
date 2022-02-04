@@ -11,7 +11,7 @@
 This is a web application developed in Javascript. It allows you to search for the air quality index all over the world and in your city via geolocation. <br> Project Link: https://github.com/GiorgiaAmato/Air-Quality-App.git
 
 ### Screenshot
-![Image text](img/airqualityapp.gif)
+![Image text](img/citylifequalityapp.png)
 
 ## Built With
 A list of technologies used within the project:
