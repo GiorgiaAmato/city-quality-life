@@ -14,6 +14,8 @@ App Link: https://life-quality.netlify.app/ <br>
 
 ### Screenshot
 ![Image text](img/citylifequalityapp.png)
+![Image text](img/citylifequalityapp_mobile.png)
+
 
 ## Built With
 A list of technologies used within the project:
