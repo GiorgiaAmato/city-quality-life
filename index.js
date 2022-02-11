@@ -18,8 +18,8 @@ async function checkQuality() {
         })
 
         .then(function (result) {
-            cityBox.style.display = 'flex';
             cityName.innerHTML = result.full_name;
+            cityBox.style.display = 'flex';
         })
 
     await fetch(`https://api.teleport.org/api/urban_areas/slug:${citySearch}/scores/`)
