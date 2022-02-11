@@ -18,7 +18,9 @@ async function checkQuality() {
         })
 
         .then(function (result) {
-            cityName.innerHTML = result.full_name;
+            var full_name = result.full_name;
+            const dataResult = _.get(result,full_name,0);
+            cityName.innerHTML = dataResult;
             cityBox.style.display = 'flex';
         })
 
