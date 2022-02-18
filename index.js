@@ -19,7 +19,7 @@ async function checkQuality() {
 
         .then(function (result) {
             var full_name = result.full_name;
-            const dataResult = _.get(result,full_name,0);
+            const dataResult = get(result,full_name,0);
             cityName.innerHTML = dataResult;
             cityBox.style.display = 'flex';
         })
