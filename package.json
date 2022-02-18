@@ -1,27 +1,59 @@
 {
   
   "devDependencies": {
-    "webpack": "^5.69.1",
-    "webpack-cli": "^4.9.2"
+  
+    
+  "css-loader": "^6.6.0",
+  
+    
+  "style-loader": "^3.3.1",
+  
+    
+  "webpack": "^5.69.1",
+  
+    
+  "webpack-cli": "^4.9.2"
+  
   },
+  
   "name": "city-quality-life",
+  
   "description": "1. [General Info](#general-info)\r 2. [Built With](#built-with)\r 3. [License](#license)\r 4. [Contact](#contact)",
+  
   "version": "1.0.0",
+  
   "main": "index.js",
-  "scripts": { 
-    "start": "webpack --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js"
-  }, 
+  
+  "scripts": {
+  
+    
+  "start": "webpack --config webpack.dev.js",
+  
+    
+  "build": "webpack --config webpack.prod.js"
+  
+  },
+  
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/GiorgiaAmato/city-quality-life.git"
+  
+    
+  "type": "git",
+  
+    
+  "url": "git+https://github.com/GiorgiaAmato/city-quality-life.git"
+  
   },
+  
   "author": "",
+  
   "license": "ISC",
+  
   "bugs": {
-    "url": "https://github.com/GiorgiaAmato/city-quality-life/issues"
+  
+    
+  "url": "https://github.com/GiorgiaAmato/city-quality-life/issues"
+  
   },
+  
   "homepage": "https://github.com/GiorgiaAmato/city-quality-life#readme"
-
 }
-
