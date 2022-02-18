@@ -2,7 +2,21 @@
   "devDependencies": {
     "webpack": "^5.69.1"
   },
-  "dependencies": {
-    
-  }
+  "name": "city-quality-life",
+  "description": "1. [General Info](#general-info)\r 2. [Built With](#built-with)\r 3. [License](#license)\r 4. [Contact](#contact)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GiorgiaAmato/city-quality-life.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GiorgiaAmato/city-quality-life/issues"
+  },
+  "homepage": "https://github.com/GiorgiaAmato/city-quality-life#readme"
 }
