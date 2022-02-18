@@ -22,6 +22,8 @@ A list of technologies used within the project:
 * [HTML5](https://developer.mozilla.org/it/docs/Web/HTML)
 * [CSS3](https://developer.mozilla.org/it/docs/Web/CSS)
 * [JAVASCRIPT](https://developer.mozilla.org/it/docs/Web/JavaScript)
+* [Lodash](https://lodash.com/)
+* [Webpack](https://webpack.js.org/)
 
 ## How to use
 In the search bar you can enter the city you are interested in receiving information about.
