@@ -29,7 +29,7 @@ async function checkQuality() {
         })
 
         .then(function (result) {
-            cityScore.innerHTML = "City Score: " + Math.floor( _.get(result, 'teleport_city_score', ' '));
+            cityScore.innerHTML = "<strong>City Score: </strong>" + _.get(result, 'teleport_city_score', 'Urban area not found').toFixed(0);
             cityDescription.innerHTML = _.get(result, 'summary', ' ');
 
             let catArray = _.get(result, 'categories', ' ');
@@ -49,7 +49,7 @@ async function checkQuality() {
                 //Add li elements to score-bar
                 let newScoreBar = document.createElement('li');
                 let color = _.get(catArray[i], 'color', ' ');
-                let addCatScoreBar = document.createTextNode(Math.floor(_.get(catArray[i], 'score_out_of_10', '')));
+                let addCatScoreBar = document.createTextNode(_.get(catArray[i], 'score_out_of_10', "Urban area not found").toFixed(0));
                 newScoreBar.appendChild(addCatScoreBar);
                 let positionScoreBar = document.getElementById('score-bar');
                 positionScoreBar.appendChild(newScoreBar).style.background = color;  
