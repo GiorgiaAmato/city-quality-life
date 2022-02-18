@@ -1,4 +1,6 @@
 import './style.css';
+import _ from 'lodash';
+
 
 let cityInput = document.getElementById("city-input");
 let btnSearch = document.getElementById('btnSearch');
