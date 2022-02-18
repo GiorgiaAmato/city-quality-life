@@ -9,26 +9,17 @@ module.exports = {
 		filename: "main.js",
 		path: path.resolve(__dirname, "dist")
 	},
-plugins: [new HtmlWebpackPlugin()],
-module: {
-	rules: [
-		{
-			test:/\\.css$/,
-			use: ["style-loader", "css-loader"] // this array is ordered rtl 
-		},
-		{
-			test: /\\html$/,
-			use: ["html-loader"]
-		},
-		{
-			test: /\\.(svg|png|jpg|gif)$/,
-			use: {
-				loader: "file-loader",
-				options: {
-					name: "[name].[hash].[ext]",
-					outputPath: "imgs"
+	plugins: [new HtmlWebpackPlugin()],
+	module: {
+		rules: [
+			{
+				test:/\\.css$/,
+				use: ["style-loader", "css-loader"] // this array is ordered rtl 
+			},
+			{
+				test: /\\html$/,
+				use: ["html-loader"]
 			}
-		}
-	]
-}
+		]
+	}
 }
