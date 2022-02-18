@@ -20,9 +20,7 @@ async function checkQuality() {
         })
 
         .then(function (result) {
-            var full_name = result.full_name;
-            const dataResult = get(result,full_name,0);
-            cityName.innerHTML = dataResult;
+            cityName.innerHTML = result.full_name;
             cityBox.style.display = 'flex';
         })
 
