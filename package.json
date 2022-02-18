@@ -3,6 +3,6 @@
     "webpack": "^5.69.1"
   },
   "dependencies": {
-    "lodash.get": "^4.4.2"
+    
   }
 }
