@@ -1,3 +1,5 @@
+var get = require('lodash.get');
+
 let cityInput = document.getElementById("city-input");
 let btnSearch = document.getElementById('btnSearch');
 let cityName = document.getElementsByClassName("city_name")[0];
