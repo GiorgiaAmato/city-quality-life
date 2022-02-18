@@ -18,7 +18,7 @@ async function checkQuality() {
         })
 
         .then(function (result) {
-            const cityValue = _.get(result, 'full_name.set', '')
+            const cityValue = _.get(result, 'full_name', 'Error')
             cityName.innerHTML = cityValue;
             cityBox.style.display = 'flex';
         })
@@ -29,10 +29,10 @@ async function checkQuality() {
         })
 
         .then(function (result) {
-            cityScore.innerHTML = "City Score: " + Math.floor(result.teleport_city_score);
-            cityDescription.innerHTML = result.summary;
+            cityScore.innerHTML = "City Score: " + Math.floor( _.get(result, 'teleport_city_score', ' '));
+            cityDescription.innerHTML = _.get(result, 'summary', ' ');
 
-            let catArray = result.categories;
+            let catArray = _.get(result, 'categories', ' ');
             let arrayLength = catArray.length;
             let category = 0;
 
@@ -41,15 +41,15 @@ async function checkQuality() {
                 
                 //Add li elements to category-list
                 let newName = document.createElement('li');
-                let addCatName = document.createTextNode(catArray[i].name);
+                let addCatName = document.createTextNode( _.get(catArray[i], 'name', ' '));
                 newName.appendChild(addCatName);
                 let positionName = document.getElementById('category-list');
                 positionName.appendChild(newName);
 
                 //Add li elements to score-bar
                 let newScoreBar = document.createElement('li');
-                let color = catArray[i].color;
-                let addCatScoreBar = document.createTextNode(Math.floor(catArray[i].score_out_of_10));
+                let color = _.get(catArray[i], 'color', ' ');
+                let addCatScoreBar = document.createTextNode(Math.floor(_.get(catArray[i], 'score_out_of_10', '')));
                 newScoreBar.appendChild(addCatScoreBar);
                 let positionScoreBar = document.getElementById('score-bar');
                 positionScoreBar.appendChild(newScoreBar).style.background = color;  
