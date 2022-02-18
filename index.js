@@ -1,5 +1,3 @@
-var get = require('lodash.get');
-
 let cityInput = document.getElementById("city-input");
 let btnSearch = document.getElementById('btnSearch');
 let cityName = document.getElementsByClassName("city_name")[0];
@@ -20,7 +18,8 @@ async function checkQuality() {
         })
 
         .then(function (result) {
-            cityName.innerHTML = result.full_name;
+            const cityValue = _.get(result, 'full_name.set', '')
+            cityName.innerHTML = cityValue;
             cityBox.style.display = 'flex';
         })
 
